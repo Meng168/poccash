@@ -1,5 +1,5 @@
 import Image from "next/image"
-import logo from '../public/assets/images/auth/logo.png'
+import LogoImage from 'assets/auth/logo.png'
 import Link from "next/link"
 import { OtherAuthButton } from "./OtherAuthButton";
 import Google from "@/components/icons/Google";
@@ -13,7 +13,7 @@ const Login = () => {
                 <div className="w-[460px] mx-auto mt-[83px] flex flex-row items-center justify-center relative h-[96px] flex-shrink-0 bg-white rounded-[20px]">
                     <Image
                         alt="logo"
-                        src={logo}
+                        src={LogoImage}
                         className="w-[176px] h-[52px]"
                         sizes="100vw"
                     />

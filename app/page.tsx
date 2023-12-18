@@ -1,5 +1,11 @@
-import { redirect } from "next/navigation";
+import Navbar from "@/components/navbar";
 
 export default function Home() {
-  return redirect('/signup')
-}
+  return (
+    <Navbar>
+      <div>
+        child
+      </div>
+    </Navbar>
+  )
+} 

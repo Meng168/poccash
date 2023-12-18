@@ -1,7 +1,7 @@
 import Image from "next/image"
-import logo from '../public/assets/images/auth/logo.png'
-import profile from '/public/assets/images/auth/profile.png'
-import camera from '/public/assets/images/auth/camera.png'
+import LogoImage from 'assets/auth/logo.png'
+import ProfileImage from 'assets/auth/profile.png'
+import CameraImage from 'assets/auth/camera.png'
 import Link from "next/link"
 import { Button, Checkbox } from "@mui/material"
 
@@ -14,7 +14,7 @@ const Register = () => {
                 <div className="max-w-[460px] w-full mt-[76px] flex flex-row items-center justify-center relative h-[96px] flex-shrink-0 bg-white rounded-[20px]">
                     <Image
                         alt="logo"
-                        src={logo}
+                        src={LogoImage}
                         className="w-[176px] h-[52px]"
                         sizes="100vw"
                     />
@@ -25,7 +25,7 @@ const Register = () => {
                         <div className="w-[258px] rounded-full border-[13px] border-white/50 bg-opacity-80 h-[252px] transform absolute left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2" />
                         <Image
                             alt="logo"
-                            src={profile}
+                            src={ProfileImage}
                             className="h-[242px] w-[248px] object-cover"
                             sizes="100vw"
                         />
@@ -33,7 +33,7 @@ const Register = () => {
                     <div className="w-[40px] flex items-center justify-center h-[40px] rounded-full bg-white absolute -bottom-3 right-10 z-10">
                         <Image
                             alt="logo"
-                            src={camera}
+                            src={CameraImage}
                             className="h-[18px] w-[22.69px] object-cover"
                             sizes="100vw"
                         />

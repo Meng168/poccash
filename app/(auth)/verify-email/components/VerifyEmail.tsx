@@ -1,7 +1,7 @@
 'use client'
 
 import Image from 'next/image'
-import logo from '../public/assets/images/auth/logo.png'
+import LogoImage from 'assets/auth/logo.png'
 import { Button } from '@mui/material'
 import { useRouter } from 'next/navigation'
 
@@ -12,7 +12,7 @@ const VerifyEmail = () => {
             <div className="w-[720px] h-[777px] pt-[39px] pr-[77px] pl-[55px] bg-white rounded-[20px]">
                 <Image
                     alt="logo"
-                    src={logo}
+                    src={LogoImage}
                     className="w-[206px] h-[106px] object-contain mb-[16px]"
                     sizes="100vw"
                 />
