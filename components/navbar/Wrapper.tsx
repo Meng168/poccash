@@ -8,7 +8,7 @@ interface Props {
     children: React.ReactNode;
 }
 
-const Navbar = ({
+const Wrapper = ({
     children
 }: Props) => {
     return (
@@ -20,4 +20,4 @@ const Navbar = ({
     );
 }
 
-export default Navbar;
+export default Wrapper;

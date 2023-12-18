@@ -1,11 +1,11 @@
-import Navbar from "@/components/navbar";
+import Wrapper from "@/components/navbar/Wrapper";
 
 export default function Home() {
   return (
-    <Navbar>
+    <Wrapper>
       <div>
         child
       </div>
-    </Navbar>
+    </Wrapper>
   )
 } 

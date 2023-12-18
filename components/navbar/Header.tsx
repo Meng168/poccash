@@ -7,7 +7,7 @@ const Header = () => {
     return (
         <header>
             <nav>
-                <div className="w-full flex flex-row items-center">
+                <div className="flex flex-row place-items-center items-center bg-red-500">
                     <Logo />
                     <Menus />
                     <MenuRight />

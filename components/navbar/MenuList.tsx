@@ -9,7 +9,7 @@ const MenuList = ({
 }: Props) => {
     return (
         <li>
-            <Link href={list.label} className="text-color-secondary">{list.label}</Link>
+            <Link href={list.link} className="text-color-secondary">{list.label}</Link>
         </li>
     );
 }
