@@ -28,7 +28,7 @@ export default function Modal() {
     }
 
     const handleSubmit = () => {
-        router.push('/signin')
+        router.push('/signup')
         localStorage.setItem("poc_policy", 'false');
         onClose()
     }
