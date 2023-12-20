@@ -3,7 +3,7 @@ import VisionCard from "./VisionCard";
 
 const Vision = () => {
     return (
-        <div className="bg-[#F4F7FA] w-[1728px] h-[2066px] -pb-[90px]">
+        <div className="bg-[#F4F7FA] w-[1920px] h-[2066px] -pb-[90px]">
             <div className="pt-[156px] pl-[590px]">
                 <h3 className="text-color-primary mb-[24px] text-[48px] font-bold leading-[54px]">Our Vision and Mission</h3>
                 <p className='text-font-20 text-center ml-[20px] text-color-secondary w-[513px] leading-[32px] font-normal'>
