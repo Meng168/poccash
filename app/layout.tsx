@@ -5,6 +5,7 @@ import ClientOnly from '@/components/ClientOnly'
 import { avenir, cerebri } from './fonts/fonts'
 import { meta } from '@/metadata'
 import { BASE_URL } from '@/url-endpoint'
+import { Viewport } from 'next'
 
 const poppins = Poppins({
   weight: ['100', '200', '300', '400', '500', '600', '700'],
@@ -13,7 +14,16 @@ const poppins = Poppins({
   display: 'swap',
 })
 
+export const viewport: Viewport = {
+  colorScheme: 'light',
+  themeColor: '#6DB33F',
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 1,
+}
+
 export const metadata: Metadata = {
+  metadataBase: new URL('https://poccash.vercel.app'),
   title: {
     template: `${meta.title} | %s`,
     default: 'Poccash'
@@ -76,6 +86,9 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: BASE_URL,
+    languages: {
+      'en-US': '/en-US'
+    },
   },
 }
 

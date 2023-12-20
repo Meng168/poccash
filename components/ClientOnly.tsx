@@ -5,6 +5,7 @@ import { AppRouterCacheProvider } from '@mui/material-nextjs/v13-appRouter';
 import { ThemeProvider } from "@mui/material";
 import { theme } from "@/utils/theme";
 import Modal from "./material-ui/Modal";
+import LoaderSpinner from "./LoaderSpinner";
 
 interface Props {
     children: React.ReactNode;
@@ -17,7 +18,9 @@ const ClientOnly = ({
     const policy = typeof window !== 'undefined' ? localStorage.getItem("poc_policy") : undefined
 
     useEffect(() => {
-        setHasMounted(true)
+        setTimeout(() => {
+            setHasMounted(true)
+        }, 2000);
     }, [])
 
     useEffect(() => {
@@ -26,7 +29,7 @@ const ClientOnly = ({
         if(!val) localStorage.setItem("poc_policy", 'true')
     }, [])
 
-    if (!hasMounted) return null
+    if (!hasMounted) return <LoaderSpinner />
 
     return (
         <AppRouterCacheProvider>
