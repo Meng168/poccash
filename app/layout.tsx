@@ -2,7 +2,7 @@ import './globals.css'
 import type { Metadata } from 'next'
 import { Poppins } from 'next/font/google'
 import ClientOnly from '@/components/ClientOnly'
-import { avenir } from './fonts/fonts'
+import { avenir, cerebri } from './fonts/fonts'
 
 const poppins = Poppins({ 
   weight: ['100', '200','300', '400', '500', '600', '700'],
@@ -28,7 +28,7 @@ export default function RootLayout({
 }: Props) {
   return (
     <html lang="en">
-      <body className={`${poppins.className} ${avenir.variable} scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-100`}>
+      <body className={`${poppins.className} ${avenir.variable} ${cerebri.variable} scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-100`}>
         <ClientOnly>
           {children}
         </ClientOnly>

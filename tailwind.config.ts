@@ -14,7 +14,8 @@ const config: Config = {
         "color-primary": "#6DB33F",
         "color-secondary": "#324C5B",
         "color-gray": "#93A1AA",
-        "color-danger": "#EE1D52"
+        "color-danger": "#EE1D52",
+        "color-dark": "#7B93A4"
       },
       fontSize: {
         'font-12': '12px',
@@ -39,6 +40,7 @@ const config: Config = {
       },
       fontFamily: {
         'avenir': ['var(--font-avenir)'],
+        'cerebri': ['var(--font-cerebri)'],
       },
     },
   },

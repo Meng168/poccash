@@ -1,17 +1,11 @@
 import React from 'react';
-import LogoImage from 'assets/auth/logo.png'
-import Image from 'next/image';
 import Link from "next/link";
+import Logo6 from '../icons/Logo6';
 
 const Logo = () => {
     return (
-        <Link href="/">
-            <Image
-                alt="logo"
-                src={LogoImage}
-                className="w-[206px] h-[82px] object-contain"
-                sizes="100vw"
-            />
+        <Link href="/" className='pr-[460px] pl-[167px]'>
+            <Logo6 />
         </Link>
     );
 }

@@ -1,18 +1,19 @@
 import FlagImage from 'assets/landing-page/home/flag_icon.png'
 import Image from 'next/image';
+import Link from 'next/link';
 
-const MenuRight = () => {
+const Flat = () => {
     return (
-        <div>
+        <Link href="/signin" className='ml-[37px] mr-[35px]'>
             <Image
                 alt="logo"
                 src={FlagImage}
-                className="w-auto h-auto"
+                className="w-[43px] h-[43px]"
                 sizes="100vw"
             />
-        </div>
+        </Link>
     )
 }
 
 
-export default MenuRight;
+export default Flat;

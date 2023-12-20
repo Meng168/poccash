@@ -14,7 +14,7 @@ const Wrapper = ({
     return (
         <>
             <Header />
-                <main>{children}</main>
+                <main className="w-[1728px]">{children}</main>
             <Footer />
         </>
     );

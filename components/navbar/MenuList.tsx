@@ -8,8 +8,8 @@ const MenuList = ({
     list
 }: Props) => {
     return (
-        <li>
-            <Link href={list.link} className="text-color-secondary">{list.label}</Link>
+        <li className="w-[127px] text-center">
+            <Link href={list.link} className={`text-font-20 font-medium ${list.active ? "text-color-primary" : "text-color-dark"}`}>{list.label}</Link>
         </li>
     );
 }

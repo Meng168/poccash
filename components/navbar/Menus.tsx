@@ -1,15 +1,20 @@
 import MenuList from "./MenuList";
-import { menuRoutes } from "./menus-data";
+import useRoutes from "./menus-data";
 
 const Menus = () => {
+    const menuRoutes = useRoutes()
     return (
-        <ul className="flex align-text-bottom justify-items-center space-x-5 bg-blue-500 h-[82px]">
-            {menuRoutes.map((list) => (
-                <MenuList 
-                    key={list.id}
-                    list={list}
-                />
-            ))}
+        <ul className="flex align-text-bottom justify-items-center">
+            {menuRoutes.map((list) => {
+                if (!list.label.includes('Home')) {
+                    return (
+                        <MenuList
+                            key={list.id}
+                            list={list}
+                        />
+                    )
+                }
+            })}
         </ul>
     );
 }
